@@ -1,4 +1,4 @@
-# gulp-javascript-obfuscator
+# gulp-javascript-obfuscator-fixed
 
 Gulp plugin for [javascript-obfuscator](https://github.com/javascript-obfuscator/javascript-obfuscator)
 
@@ -7,14 +7,14 @@ Gulp plugin for [javascript-obfuscator](https://github.com/javascript-obfuscator
 Install the package with npm:
 
 ```bash
-$ npm install --save gulp-javascript-obfuscator
+$ npm install --save gulp-javascript-obfuscator-fixed
 ```
 
 ## Usage
 
 ```javascript
 const gulp = require('gulp');
-const javascriptObfuscator = require('gulp-javascript-obfuscator');
+const javascriptObfuscator = require('gulp-javascript-obfuscator-fixed');
 
 gulp.src('file.js')
     .pipe(javascriptObfuscator())
@@ -37,9 +37,9 @@ The only exception is obfuscator's `sourceMap` option which must not be set, as 
 
 ## Source Maps
 
-With version `1.1.6` onwards, gulp-javascript-obfuscator can be used in tandem with [gulp-sourcemaps](https://github.com/floridoo/gulp-sourcemaps) in order to generate source maps for your javascript files.
+With version `1.1.6` onwards, gulp-javascript-obfuscator-fixed can be used in tandem with [gulp-sourcemaps](https://github.com/floridoo/gulp-sourcemaps) in order to generate source maps for your javascript files.
 
-You will need to initialize gulp-sourcemaps prior to running gulp-javascript-obfuscator and write the source maps after, as such:
+You will need to initialize gulp-sourcemaps prior to running gulp-javascript-obfuscator-fixed and write the source maps after, as such:
 
 ```javascript
 const sourcemaps = require('gulp-sourcemaps');
